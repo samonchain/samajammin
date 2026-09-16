@@ -1,8 +1,17 @@
-# Samajammin.com
+# samajammin.com (archived)
 
-Here's my personal website. It's a simple, static site hosted on [IPFS](https://ipfs.io/) via [CloudFlare's gateway](https://www.cloudflare.com/distributed-web-gateway/):
+> **This site is no longer online.** The `samajammin.com` domain is no longer
+> registered and the content is no longer pinned to IPFS, so the links and
+> commands below will not resolve.
+>
+> My current site is **[samrichards.dev](https://samrichards.dev/)**.
+>
+> This repo is kept public as a historical reference — the IPFS walkthrough
+> still holds up if you want to publish a static site the same way.
 
-[https://www.samajammin.com/](https://www.samajammin.com/)
+This was my personal website: a simple, static site hosted on
+[IPFS](https://ipfs.io/) via
+[Cloudflare's gateway](https://www.cloudflare.com/distributed-web-gateway/).
 
 ## Deploy your own site to IPFS
 
@@ -26,15 +35,15 @@ That's about it! Read [this excellent walkthrough](https://developers.cloudflare
 
 One advantage of IPFS is that the more popular the content, the faster it will load. The more any content is shared across nodes, the more peer nodes that can serve it to our browsers.
 
-If you add my site and other IPFS sites to your IPFS node, you will help me and and the IPFS community!
+If you add IPFS sites to your own node, you help the IPFS community!
 
-Follow these steps:
+Follow these steps, substituting a site that is actually published:
 
 ```
 cd ~/ && mkdir ipfs-files # Create folder to download ipfs content
 cd ipfs-files
-ipfs get /ipns/www.samajammin.com
-ipfs add -r www.samajammin.com
+ipfs get /ipns/<the-site-you-want-to-pin>
+ipfs add -r <the-site-you-want-to-pin>
 ```
 
 Thanks for your contribution to the peer-to-peer revolution :)
